@@ -1,3 +1,4 @@
+const { transformColorObjectOfDarkmode } = require('./transform')
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -6,6 +7,8 @@ module.exports = {
     './app/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
+    colors: transformColorObjectOfDarkmode()[0],
+
     extend: {
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
@@ -16,3 +19,5 @@ module.exports = {
   },
   plugins: [],
 }
+
+console.log(transformColorObjectOfDarkmode()[0])
