@@ -9,8 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@types/node": "18.16.16",
-    "@types/react": "18.2.9",
+    "@types/node": "18.16.17",
+    "@types/react": "18.2.11",
     "@types/react-dom": "18.2.4",
     "autoprefixer": "10.4.14",
     "eslint": "8.41.0",
